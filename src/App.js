@@ -1,6 +1,6 @@
 /** @format */
 
-import React,{useState} from "react";
+import React,{useState,Fragment} from "react";
 import "./App.css";
 import UsersList from "./components/formsComponents/UsersList";
 import NewFormItems from "./components/formsComponents/NewFormItems";
@@ -34,10 +34,10 @@ const App = ()=> {
  }
 
   return (
-    <div>
+    <Fragment>
       <NewFormItems onAddUser={addHandler} />
       <UsersList users={addInput} />
-    </div>
+    </Fragment>
   );
 }
 

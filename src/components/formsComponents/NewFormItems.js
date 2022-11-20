@@ -1,5 +1,6 @@
 import React ,{useState} from "react";
 import './NewFormItems.css';
+import Wrapper from "../Helper/Wrapper";
 import Error from "../UI/Error";
 import Button from "../UI/Button";
 
@@ -47,7 +48,7 @@ const NewFormItems = props => {
 
   
   return (
-    <div>
+   <Wrapper>
       {error && (
         <Error
           title={error.title}
@@ -76,7 +77,7 @@ const NewFormItems = props => {
           <Button type="submit">Add User</Button>
         </div>
       </form>
-    </div>
+    </Wrapper>
   );
 }
 export default NewFormItems;
